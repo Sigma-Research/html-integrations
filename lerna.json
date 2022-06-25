@@ -1,0 +1,12 @@
+{
+  "packages": [
+    "packages/*"
+  ],
+  "command": {
+    "version": {
+      "allowBranch": ["stable", "master"],
+      "exact": "true"
+    }
+  },
+  "version": "independent"
+}

@@ -1,0 +1,127 @@
+{
+    "devkit": {
+        "path": "./packages/mathtype-html-integration-devkit/",
+        "demo": false,
+        "port": ""
+    },
+    "mathCKEditor4": {
+        "path": "./packages/mathtype-ckeditor4/",
+        "demo": false,
+        "port": ""
+    },
+    "mathCKEditor5": {
+        "path": "./packages/mathtype-ckeditor5/",
+        "demo": false,
+        "port": ""
+    },
+    "mathFroala2": {
+        "path": "./packages/mathtype-froala2/",
+        "demo": false,
+        "port": ""
+    },
+    "mathFroala3": {
+        "path": "./packages/mathtype-froala3/",
+        "demo": false,
+        "port": ""
+    },
+    "mathGeneric": {
+        "path": "./packages/mathtype-generic/",
+        "demo": false,
+        "port": ""
+    },
+    "mathTinyMCE4": {
+        "path": "./packages/mathtype-tinymce4/",
+        "demo": false,
+        "port": ""
+    },
+    "mathTinyMCE5": {
+        "path": "./packages/mathtype-tinymce5/",
+        "demo": false,
+        "port": ""
+    },
+    "mathTinyMCE6": {
+        "path": "./packages/mathtype-tinymce6/",
+        "demo": false,
+        "port": ""
+    },
+    "reactCKEditor5": {
+        "path": "./demos/react/ckeditor5/",
+        "demo": true,
+        "port": "3002"
+    },
+    "reactFroala": {
+        "path": "./demos/react/froala/",
+        "demo": true,
+        "port": "3004"
+    },
+    "reactGeneric": {
+        "path": "./demos/react/generic/",
+        "demo": true,
+        "port": "3007"
+    },
+    "reactTinyMCE5": {
+        "path": "./demos/react/tinymce5/",
+        "demo": true,
+        "port": "3006"
+    },
+    "angularCKEditor5": {
+        "path": "./demos/angular/ckeditor5/",
+        "demo": true,
+        "port": "4002"
+    },
+    "angularFroala": {
+        "path": "./demos/angular/froala/",
+        "demo": true,
+        "port": "4004"
+    },
+    "angularGeneric": {
+        "path": "./demos/angular/generic/",
+        "demo": true,
+        "port": "4007"
+    },
+    "angularTinyMCE5": {
+        "path": "./demos/angular/tinymce5/",
+        "demo": true,
+        "port": "4006"
+    },
+    "html5CKEditor4": {
+        "path": "./demos/html5/ckeditor4/",
+        "demo": true,
+        "port": "8001"
+    },
+    "html5CKEditor5": {
+        "path": "./demos/html5/ckeditor5/",
+        "demo": true,
+        "port": "8002"
+    },
+    "html5Froala2": {
+        "path": "./demos/html5/froala2/",
+        "demo": true,
+        "port": "8003"
+    },
+    "html5Froala": {
+        "path": "./demos/html5/froala/",
+        "demo": true,
+        "port": "8004"
+    },
+    "html5Generic": {
+        "path": "./demos/html5/generic/",
+        "demo": true,
+        "port": "8007"
+    },
+    "html5TinyMCE4": {
+        "path": "./demos/html5/tinymce4/",
+        "demo": true,
+        "port": "8005"
+    },
+    "html5TinyMCE5": {
+        "path": "./demos/html5/tinymce5/",
+        "demo": true,
+        "port": "8006"
+    },
+    "html5TinyMCE6": {
+        "path": "./demos/html5/tinymce6/",
+        "demo": true,
+        "port": "8008"
+    }
+}

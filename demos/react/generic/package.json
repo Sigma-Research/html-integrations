@@ -1,0 +1,38 @@
+{
+  "name": "demo-react-generic",
+  "version": "1.0.1",
+  "description": "A simple ReactJS App integrating WIRIS MathType in a Generic integration.",
+  "private": true,
+  "dependencies": {
+    "@wiris/mathtype-generic": "^7.26.0",
+    "@wiris/mathtype-html-integration-devkit": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "web-vitals": "^1.0.0",
+    "raw-loader": "^4.0.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "^4.0.0",
+    "resources": "file:../../../resources"
+  },
+  "scripts": {
+    "start": "cross-env PORT=3007 react-scripts start",
+    "compile-package": "cd ../../../packages/mathtype-generic/ && npm run compile -- npm --dev",
+    "test": "react-scripts test"
+  },
+  "author": "WIRIS Team (http://www.wiris.com)",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
