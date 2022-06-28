@@ -269,6 +269,7 @@ export class CKEditor4Integration extends IntegrationModel {
         label: 'Insert a math equation - MathType',
         command: 'ckeditor_wiris_openFormulaEditor',
         icon: `${CKEDITOR.plugins.getPath('ckeditor_wiris')}./icons/formula.png`,
+        toolbar: 'ckeditor_wiris_formulaEditor', // 支持 toolbarGroup 配置
 
       });
 
@@ -277,6 +278,7 @@ export class CKEditor4Integration extends IntegrationModel {
         label: 'Insert a chemistry formula - ChemType',
         command: 'ckeditor_wiris_openFormulaEditorChemistry',
         icon: `${CKEDITOR.plugins.getPath('ckeditor_wiris')}./icons/chem.png`,
+        toolbar: 'ckeditor_wiris_formulaEditorChemistry', // 支持 toolbarGroup 配置
 
       });
 
