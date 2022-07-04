@@ -334,8 +334,10 @@ export class CKEditor4Integration extends IntegrationModel {
         // the container has a class 'cke_wysiwyg_[container type]' where [container type] can be 'frame' or 'div'.
         ckeditorIntegrationModelProperties.target = editor.container.$.querySelector('*[class^=cke_wysiwyg]');
         ckeditorIntegrationModelProperties.serviceProviderProperties = {};
-        ckeditorIntegrationModelProperties.serviceProviderProperties.URI = 'http://mathtype.hexinedu.com/integration'; // https://www.wiris.net/demo/plugins/app
-        ckeditorIntegrationModelProperties.serviceProviderProperties.server = 'java';
+        // ckeditorIntegrationModelProperties.serviceProviderProperties.URI = 'https://www.wiris.net/demo/plugins/app';
+        ckeditorIntegrationModelProperties.serviceProviderProperties.URI = 'http://mathtype.hexinedu.com/integration';
+        // ckeditorIntegrationModelProperties.serviceProviderProperties.server = 'java';
+        ckeditorIntegrationModelProperties.serviceProviderProperties.server = 'php';
         ckeditorIntegrationModelProperties.version = packageInfo.version;
         ckeditorIntegrationModelProperties.scriptName = 'plugin.js';
         ckeditorIntegrationModelProperties.environment = {};

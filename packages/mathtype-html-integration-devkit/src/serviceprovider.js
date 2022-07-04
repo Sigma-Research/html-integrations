@@ -135,11 +135,11 @@ export default class ServiceProvider {
   static init(parameters) {
     ServiceProvider.parameters = parameters;
     // Services path (tech dependant).
-    let configurationURI = ServiceProvider.createServiceURI('configurationjs.php');
-    let createImageURI = ServiceProvider.createServiceURI('createimage.php');
-    let showImageURI = ServiceProvider.createServiceURI('showimage.php');
-    let getMathMLURI = ServiceProvider.createServiceURI('getmathml.php');
-    let serviceURI = ServiceProvider.createServiceURI('service.php');
+    let configurationURI = ServiceProvider.createServiceURI('configurationjs');
+    let createImageURI = ServiceProvider.createServiceURI('createimage');
+    let showImageURI = ServiceProvider.createServiceURI('showimage');
+    let getMathMLURI = ServiceProvider.createServiceURI('getmathml');
+    let serviceURI = ServiceProvider.createServiceURI('service');
 
     // Some backend integrations (like Java o Ruby) have an absolute backend path,
     // for example: /app/service. For them we calculate the absolute URL path, i.e

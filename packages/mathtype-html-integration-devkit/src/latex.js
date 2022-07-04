@@ -54,7 +54,7 @@ export default class Latex {
     let latex = '';
 
     if (jsonResponse.status === 'ok') {
-      latex = jsonResponse.result.text;
+      latex = jsonResponse.result.text || jsonResponse.result;
       const latexHtmlEntitiesEncoded = Util.htmlEntities(latex);
       // Inserting LaTeX semantics.
       const mathmlWithSemantics = MathML.addAnnotation(mathml, latexHtmlEntitiesEncoded, 'LaTeX');

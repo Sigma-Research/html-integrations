@@ -107,6 +107,7 @@ export default class Parser {
 
     // Role math https://www.w3.org/TR/wai-aria/roles#math.
     imgObject.setAttribute('role', 'math');
+    
     return imgObject;
   }
 

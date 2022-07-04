@@ -428,6 +428,18 @@ export default class Core {
       selection.addRange(range);
       nodeDocument.body.focus();
     }
+
+    // Tips：
+    // 把 mathml 对应的 latex 暂存在 span katex 标签中。
+    // safeXmlDecode
+    if (!!node.parentElement) {
+      let mathml = node.getAttribute('data-mathml');
+      mathml = MathML.safeXmlDecode(mathml);
+      if (!!mathml) {
+        const latex = Latex.getLatexFromMathML(mathml);
+        node.parentElement.setAttribute('data-latex', latex);
+      }
+    }
   }
 
   /**
