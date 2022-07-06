@@ -430,9 +430,15 @@ export default class Core {
     }
 
     // Tips：
-    // 把 mathml 对应的 latex 暂存在 span katex 标签中。
-    // safeXmlDecode
+    // 把 mathml 对应的 latex 暂存在 span katex 标签中，
+    // UPDATED：并且这里需要注意插入场景父节点可能不是 span katex 标签，则创建插入、这是基于 hexin-ckeditor 的约定。
     if (!!node.parentElement) {
+      if (!node.parentElement.tagName === 'SPAN' || !node.parentElement.className.includes('katex')) {
+        const $span = document.createElement('span');
+        $span.className = 'katex';
+        node.parentElement.replaceChild($span, node);
+        $span.appendChild(node);
+      }
       let mathml = node.getAttribute('data-mathml');
       mathml = MathML.safeXmlDecode(mathml);
       if (!!mathml) {
