@@ -93,6 +93,7 @@ export class CKEditor4Integration extends IntegrationModel {
             || !editor.config.wirislistenersdisabled) {
       // First editor parsing.
       editor.setData(Parser.initParse(editor.getData()));
+      editor.fire('mathtypeparsedone');
 
       // Maintain currentInstance updated.
       editor.on('focus', (event) => {
@@ -113,6 +114,7 @@ export class CKEditor4Integration extends IntegrationModel {
 
       editor.on('setData', (e) => {
         e.data.dataValue = Parser.initParse(e.data.dataValue || '');
+        editor.fire('mathtypeparsedone');
       });
 
       editor.on('afterSetData', (e) => { // eslint-disable-line no-unused-vars

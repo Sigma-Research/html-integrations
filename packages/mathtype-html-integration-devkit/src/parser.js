@@ -154,7 +154,8 @@ export default class Parser {
     in Moodle.
     */
     code = Parser.initParseSaveMode(code, language);
-    return Parser.initParseEditMode(code);
+    code = Parser.initParseEditMode(code);
+    return code;
   }
 
   /**
