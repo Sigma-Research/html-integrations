@@ -337,7 +337,7 @@ export class CKEditor4Integration extends IntegrationModel {
         ckeditorIntegrationModelProperties.target = editor.container.$.querySelector('*[class^=cke_wysiwyg]');
         ckeditorIntegrationModelProperties.serviceProviderProperties = {};
         // ckeditorIntegrationModelProperties.serviceProviderProperties.URI = 'https://www.wiris.net/demo/plugins/app';
-        ckeditorIntegrationModelProperties.serviceProviderProperties.URI = 'http://mathtype.hexinedu.com/integration';
+        ckeditorIntegrationModelProperties.serviceProviderProperties.URI = `${window.location.protocol}//mathtype.hexinedu.com/integration`;
         // ckeditorIntegrationModelProperties.serviceProviderProperties.server = 'java';
         ckeditorIntegrationModelProperties.serviceProviderProperties.server = 'php';
         ckeditorIntegrationModelProperties.version = packageInfo.version;

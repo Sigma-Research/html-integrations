@@ -127,3 +127,5 @@ cypress/videos
 
 # Verdaccio
 /storage
+
+.DS_Store
