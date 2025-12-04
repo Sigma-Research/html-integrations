@@ -221,7 +221,7 @@ export default class ContentManager {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     // let editorUrl = Configuration.get('editorUrl');
-    let editorUrl = 'http://sigma-stable-static.oss-cn-shanghai.aliyuncs.com/static/mathtype/editor/editor.min.js';
+    let editorUrl = `${window.location.protocol}//sigma-stable-static.oss-cn-shanghai.aliyuncs.com/static/mathtype/editor/editor.min.js`;
     // We create an object url for parse url string and work more efficiently.
     const anchorElement = document.createElement('a');
 
